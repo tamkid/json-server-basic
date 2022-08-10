@@ -1,0 +1,32 @@
+{
+    "categories": [
+        {
+            "id": 1,
+            "name": "cate 1"
+        },
+        {
+            "id": 2,
+            "name": "cate 2"
+        }
+    ],
+    "products": [
+        {
+            "id": 1,
+            "name": "product 1",
+            "categoryId": 1
+        },
+        {
+            "id": 2,
+            "name": "product 2",
+            "categoryId": 1
+        },
+        {
+            "id": 3,
+            "name": "product 3",
+            "categoryId": 2
+        }
+    ],
+    "profile": {
+        "name": "tom-kid"
+    }
+}
