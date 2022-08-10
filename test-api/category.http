@@ -1,0 +1,37 @@
+@baseUrl = http://localhost:3000
+@resourceName = api/categories
+
+# Products
+
+# @name getAll
+GET {{baseUrl}}/{{resourceName}}
+
+###
+
+# @name get
+GET {{baseUrl}}/{{resourceName}}/1
+
+###
+
+# @name addNew
+POST {{baseUrl}}/{{resourceName}}
+Content-Type: application/json
+
+{
+    "name": "cate 3"
+}
+
+###
+
+# @name update
+PATCH {{baseUrl}}/{{resourceName}}/9ee38807-73c1-49d3-aad0-e71a5742088f
+Content-Type: application/json
+
+{
+    "name": "cate 3 update"
+}
+
+###
+
+# @name delete
+DELETE {{baseUrl}}/{{resourceName}}/3

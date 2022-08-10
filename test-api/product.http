@@ -1,0 +1,50 @@
+@baseUrl = http://localhost:3000
+@resourceName = api/products
+
+# Products
+
+# @name getAll
+GET {{baseUrl}}/{{resourceName}}
+
+###
+
+# @name getWithPagination
+GET {{baseUrl}}/{{resourceName}}?_limit=3&_page=1
+
+###
+
+# @name getWithFilter
+GET {{baseUrl}}/{{resourceName}}?title_like=in
+
+###
+
+# @name get
+GET {{baseUrl}}/{{resourceName}}/a2b5c372-9aed-4c69-8bcd-a09639707945
+
+###
+
+# @name addNew
+POST {{baseUrl}}/{{resourceName}}
+Content-Type: application/json
+
+{
+    "categoryId": "d27f7584-54e9-422f-8a46-2cefbde3320c",
+    "title": "New Product",
+    "description": "Saepe laborum quia in aut. Dolores sit in dolores reiciendis nesciunt. Eaque optio fugiat explicabo. Sed dolorem corrupti odit.",
+    "price": 70
+  }
+
+###
+
+# @name update
+PATCH {{baseUrl}}/{{resourceName}}/9ee38807-73c1-49d3-aad0-e71a5742088f
+Content-Type: application/json
+
+{
+    "name": "cate 3 update"
+}
+
+###
+
+# @name delete
+DELETE {{baseUrl}}/{{resourceName}}/3
